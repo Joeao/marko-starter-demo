@@ -18,9 +18,10 @@ style {
   }
 }
 
-<div.count>
-  ${state.count}
-</div>
-<button.example-button on-click('increment')>
-  Click me!
-</button>
+<include('../included-parent')>
+  <@body>
+    <button.example-button on-click('increment')>
+      Click me!
+    </button>
+  </@body>
+</include>
